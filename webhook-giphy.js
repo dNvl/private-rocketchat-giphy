@@ -13,15 +13,15 @@ class Script {
         let u = '';
         if(trigger.indexOf('gif') !== -1) {
             if (phrase.indexOf('random') !== -1) {
-                u = request.url + 'gifs/random?api_key=dc6zaTOxFJmzC&limit=1&rating=' + config.rating;
+                u = request.url + 'gifs/random?api_key=[APIKEYHERE]&limit=1&rating=' + config.rating;
             } else {
-                u = request.url + 'gifs/search?api_key=dc6zaTOxFJmzC&q=' + phrase + '&rating=' + config.rating;
+                u = request.url + 'gifs/search?api_key=[APIKEYHERE]&q=' + phrase + '&rating=' + config.rating;
             }
         } else {
             if (phrase.indexOf('random') !== -1) {
-                u = request.url + 'stickers/random?api_key=dc6zaTOxFJmzC&limit=1&rating=' + config.rating;
+                u = request.url + 'stickers/random?api_key=[APIKEYHERE]&limit=1&rating=' + config.rating;
             } else {
-                u = request.url + 'stickers/search?api_key=dc6zaTOxFJmzC&q=' + phrase + '&rating=' + config.rating;
+                u = request.url + 'stickers/search?api_key=[APIKEYHERE]&q=' + phrase + '&rating=' + config.rating;
             }
        }
         return {
